@@ -1,0 +1,334 @@
+
+
+/*===============Propiedades Globales================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+/*===================HEADER==========================*/
+a{
+    text-decoration: none;
+    color: black;
+}
+.tamaño{
+  height: 100px;
+  width: auto;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.fondosection{
+    background-color: #0949a7 !important;
+    border-radius: 10px;
+}
+#contactoh:hover{
+
+    color: #1b2a4e !important;
+}
+/*===================MENU==========================*/
+
+ #menu a, button{
+     font-size: 18px !important;
+     font-weight: 600;
+    
+ }
+
+ #menu a{
+     color:#3f3f3f;
+     
+ }
+/*===================SLIDER DE IMAGENES==========================*/
+
+.carousel-inner {
+    max-height:39rem !important;
+}
+
+/*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
+
+
+
+#img-equipo{
+    max-height:30rem !important;
+    width:50%;
+}
+
+#equipo{
+    margin-top: 100px;
+}
+/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
+#local {
+    margin-top:50px;
+    background-color: #f3f3f3;
+    display:flex;
+    justify-content: center; 
+    padding-bottom: 300px; 
+}
+
+.mapa {
+    background: url(../img/mapa.png);
+    width:100%;
+    height:500px;
+}
+
+
+.wrapper-local {
+    width:50%;
+    margin-left:100px;
+    padding-top:150px;
+}
+
+
+/*===========================SECCION EQUIPO MIAMI==================================*/
+#numeros-local{
+    margin:0 !important;
+    padding:0 !important;
+}
+#numeros-local div {
+    padding: 0 20px 0 0;   
+    text-align:left;
+    height:48px;
+}
+
+#numeros-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+  }
+#numeros-local div:not(:first-child) {
+    padding-left:20px;
+  }
+
+#numeros-local p{
+    margin:0;
+}
+
+/*=========================CONTACTOS BACKGROUND================================*/
+
+#bg-contactos{
+    position:relative;
+    top: -130px;
+} 
+
+ #seccion-contacto{
+    background-color: #1b2a4e;
+    min-height:500px;
+    position:relative;
+}
+
+/*=========================CONTACTOS FORMULARIO================================*/
+
+#contenedor-formulario{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius:5px;
+    
+}
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
+
+
+
+
+/*=========================FOOTER================================*/
+
+footer {
+    background: #1b2a4e;
+    min-height: 100px;;
+}
+footer p{
+    color:#f3f3f3;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+    #intro, #equipo {
+        width:90% !important;
+        margin:auto;
+    }
+  
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+   }
+   .wrapper-local {
+    width:90%;
+    margin:auto;
+    padding-top:50px;    
+   }
+ 
+}
+.herramientas{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px !important;
+}
+.codigo{
+    margin-bottom: 30px;
+    margin-top: 0px;
+    border-radius: 20px;
+
+}
+
+.caja{
+    margin-top: auto;
+    margin-right: 5px;
+    margin-left:5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 100px;
+    height: auto;
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+    #intro, #equipo{
+        width:90% !important;
+        margin:auto;
+    }
+
+    
+    #img-equipo{
+        max-height:20rem !important;
+        width:90%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    .mapa img {
+        width:100%;
+        height:auto;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
+
+
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+    .mapar{
+display: flex;
+flex-wrap: wrap;
+padding-right: 50px;
+padding-bottom: 10px;    }
+    .mapagoogle{
+        width: 100% !important;
+    }
+    
+}
+
+#img-contenedor img {
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+    width:100%;
+    }
+    #img-contenedor:hover img {
+    -webkit-transform:scale(0.75);
+    -moz-transform:scale(0.75);
+    -ms-transform:scale(0.75);
+    -o-transform:scale(0.75);
+    transform:scale(0.75);
+    }
+    #img-contenedor {/*Ancho y altura son modificables al requerimiento de cada uno*/
+    width: auto;
+    height:auto;
+    overflow:hidden;
+    }
+   h3{
+       text-align: center;
+       margin-top: 10px;
+       font-size: 2rem;
+       font-family: 'Montserrat', sans-serif;
+   }
+   .bgnombre{
+background-repeat: no-repeat;  
+background-position: center;     
+border-radius: 20px;
+padding: 10px;
+   }
+
+   #img-contenedor2 img {
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+    width:100%;
+    }
+    #img-contenedor2:hover img {
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+    }
+.warnings{
+    text-align: center;
+    color: red;
+    padding: 10px;
+}
+
+.spancolor{
+    color: #0a0b0c;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
